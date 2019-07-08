@@ -1,0 +1,232 @@
+
+1.How to make Ajax call in javascrpts, what are the steps, objects involved
+2. Java 8 new features.
+
+1. OOPs concepts
+	what is JDK JRE and  JVM 
+	What is Overriding vs Overloading ? give me a real time scenario where we use 
+	How Dynamic Polymorphism vs static polymorphism are acheived 
+	what is the use of Inheritence ? they are asking tricky questions on super class reference pointing to sub class methods , look for compile time and runtime errors
+	Abstract class Vs Interface -- Give me real time cases where we use abstraction and interface
+	What are the major benifits of using Interface ?
+	what is Comparable and Comparator interfaces, where do we use ?
+	what is hashCode() and equals() contract ?
+	How java is plateform independent ?
+	difference between 1.6 and 1.7 versions
+
+2. Serialization 
+	what is Serialization ?
+	What is SerialVersionUID, why do  we use ?
+	how inheritence works in Serialization. like if super class is Serializable will subclass be Serializable go through all the cases .
+	how objects are identified during de-serilazation process ?
+	
+3. Singleton class
+	How do you create a singleton class ?
+	What are the ways to break singleton design pattern and how to overcome those ?
+	
+4. Exception handling
+	what is try with resources
+	In what case Finally does not work
+	Difference between throws and throw keyword.
+	what is a runtime exception  ?
+	write a program to catch checked and unchecked expections.
+	How did you handle expections in your project?
+	
+5. Multi threading
+	what is Synchronization ? difference types of Synchronization
+	what is meant by synchronize(this) ?
+	What a program showing how do we deal with Synchronization?
+	What is a dead lock situation write a program ?
+	what is Volatile variable ?
+	Thread Life cycle methods
+    Difference between yeild() vs join() methods
+	Difference between Sleep and wait methods
+	Executor service in multi threading
+	Can we call garbage collector thread.
+	When we run a java program how many threads will be active in JVM ?  ANS : min of two threads
+			
+6. Collection api
+	When to use ArrayList and LinkedList ?
+	Learn the hirarchie of Collections
+	what is fail-safe and fail-fast ?
+	Difference between HashMap and ConcurrentHashMap
+	Concurrency api
+	How does HashMap work, internal Implementation of Hashmap ?
+	What is load factor of HashMap
+	What if HashMap allows duplicate keys  ?
+	
+	
+7. String
+	How can you create immutable class.
+	How can we break immutable feature of a class. 
+	https://javarevisited.blogspot.com/2017/04/does-making-all-fields-final-makes-a-class-Immutable-in-Java.html
+	what if a field of an immutable class is mutable, how do you prevent it.
+	if string str1 ='tavant'; string str2 ='tanvat'; -- are the hashcode values same or different?
+	Why string class is immutable
+	what is the difference between String str = new String("java"); and String str = "Java"; ?
+	
+	
+8. Java8
+	what are Lambada Expressions
+	what is Functional interface, why there is only one abstract method in functional interface ?
+	what are functional programming benifits ?
+	how can you read a list, map using java8
+	how functional programming is achieved in java.
+	what is the difference between sequential and parallel strings
+		
+9. Hashcode() and equals contract	
+
+JDBC
+	how do you handle Transactions ?
+	Transaction isolation levels
+	
+Servlets
+	Difference between ServletContext and SevletConfig ?
+	What is  load on startup, what if we supplu negative value ?
+	how to you do Session management ?
+	What is a RequestDispacther ?
+	
+JSp
+	What are well defined objects avaliable in JSP page
+	what is the difference between Page and pageContext ?
+	List JSP action tags.
+
+Hibernate
+	what are the Advantages of hibernate over jdbc
+	what does hibernate Configuration file contains
+	what are Mapping files, what are the tags avaliable
+	Steps to create hibernate program
+	what is First level cache and  Second level cache ?
+	How do you enable second level cache in hibernate
+	get() vs Load()
+	update() vs merge()
+	save() vs persist()
+	evit() vs clear
+	what is HQL , Criteria API, 
+	how many types of Relationships are supported in hibernate
+	How do u call stored procudure in hibernate.
+	JPA and hibernate difference.
+	how do you handle Transactions ?
+	
+Spring
+	what is meant by IOC, and  DI
+	how many Types of IOC containers are there
+		BeanFactory
+		ApplicationContext
+	what is the difference between BeanFactory and ApplicationContext ?
+	what is meant by Autowire and how many types are there
+		no
+		byType
+		ByName
+		autodetect
+		constructor
+		
+	tell me about Spring bean scopes
+		singleton
+		prototype
+		request
+		session
+		what is globalsession
+	what is @Component vs @Controller vs @Sevice vs @Repository vs 
+	List All Annotations in Spring
+	How do you integrate Hibernate with Spring
+	How did you handle exceptions in spring
+	
+Webservices
+	What is a Restful web service.
+	How do you develop a restful webservice.
+	List All Annotations in restful webservices.
+	write a program Restful url to produce (Jason object) all employees and single emp (when empno is supplied).
+	what are the idempotent methods in Rest api
+	what is the difference between post vs put vs patch ? when to use which method.
+	
+	
+They are testing programming skills too 
+
+Program to find 2nd largest in array using single for loop
+	
+	public static void main(String[] args) {
+ 
+		int arr[] = { 14, 46, 47, 86, 92, 52, 48, 36, 66, 85 };
+		int largest = arr[0];
+		int secondLargest = arr[0];
+		
+		System.out.println("The given array is:" );
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i]+"\t");
+		}
+		for (int i = 0; i < arr.length; i++) {
+ 
+			if (arr[i] > largest) {
+				secondLargest = largest;
+				largest = arr[i];
+ 
+			} else if (arr[i] > secondLargest) {
+				secondLargest = arr[i];
+ 
+			}
+		}
+ 
+		System.out.println("\nSecond largest number is:" + secondLargest);
+ 
+	Program to find Sum of digits of a number.
+	
+	public static void main(String args[])
+    {
+        int m, n, sum = 0;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter the number:");
+        m = s.nextInt();
+        while(m > 0)
+        {
+            n = m % 10;
+            sum = sum + n;
+            m = m / 10;
+        }
+        System.out.println("Sum of Digits:"+sum);
+    }
+	
+	Program to Reverse of string without using string functions
+	 public static void main(String[] args) 
+    { 
+        String input = "GeeksforGeeks"; 
+  
+        // getBytes() method to convert string  
+        // into bytes[]. 
+        byte [] strAsByteArray = input.getBytes(); 
+  
+        byte [] result =  
+                   new byte [strAsByteArray.length]; 
+  
+        // Store result in reverse order into the 
+        // result byte[] 
+        for (int i = 0; i<strAsByteArray.length; i++) 
+            result[i] =  
+             strAsByteArray[strAsByteArray.length-i-1]; 
+  
+        System.out.println(new String(result)); 
+    } 
+	Approach 2: 
+	public static void main(String[] args) 
+    { 
+        String input = "GeeksForGeeks"; 
+  
+        // convert String to character array 
+        // by using toCharArray 
+        char[] try1 = input.toCharArray(); 
+  
+        for (int i = try1.length-1; i>=0; i--) 
+            System.out.print(try1[i]); 
+    } 
+	
+	programs to Print a priyamid.
+	Programs on threads
+	Program to get fibannaci series
+	Program to find if a given number is prime or not
+	programs on Hashmaps and List like remove, add, iterate map, etc
+	
+SQL
+--------
+find the 2nd largest salary in employee table
+what is View .
+what is groupby and order by 
